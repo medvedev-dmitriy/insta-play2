@@ -1,0 +1,9 @@
+@(message: String)
+
+@main("Home page"){
+    <p>@message</p>
+    <form method="GET" action="/handleInstagramToken/post">
+        <input type="text" name="tag"/>
+        <input type="button" name="send" value="Feed"/>
+    </form>
+}

@@ -1,0 +1,8 @@
+@(list:Seq[org.jinstagram.entity.users.feed.MediaFeedData])
+<ul>
+    @for(tagData <- list){
+    <li>
+        <img src="@tagData.getImages.getLowResolution.getImageUrl" alt=""/>
+    </li>
+    }
+</ul>
